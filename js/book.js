@@ -6,8 +6,6 @@ const loadBooks = () => {
     // Clear the Input field 
     searchField.value = '';
 
-    //console.log(searchText);
-
     // Loading the search result giving book name dynamically 
     const url = `https://openlibrary.org/search.json?q=${searchText}`
 
@@ -17,10 +15,7 @@ const loadBooks = () => {
 }
 
 // Arrow function to display the search result in the Client side 
-const displayResult = data =>{
-    //console.log(data);
-
-    
+const displayResult = data =>{  
     // Getting the field to display Result Counter 
     const resultCounter = document.getElementById('result-counter');
     resultCounter.textContent = '';
