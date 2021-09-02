@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive || Hasibul</title>
+
+    <!-- Bootstrap CDN Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- CSS file Link  -->
+    <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <h1 class="text-primary text-center fw-bolder my-4">Search Your Desire Book By Name</h1>
+
+        <!-- Search Box Section  -->
+        <div class="input-group mb-3 w-75 mx-auto">
+            <input id="search-input" type="text" class="form-control" placeholder="Enter Book Name and Please Wait a While" aria-label="Enter Book Name" aria-describedby="button-addon2">
+            <button onclick="loadBooks()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+
+        <!-- Error Message section  -->
+        <div id="error-message">
+
+        </div>
+
+        <br>
+
+
+        <!-- Result Counter Section  -->
+        <div id="result-counter">
+ 
+        </div>
+
+        <br>
+
+        <!-- Showing Book Result  -->
+        <div id="result-container" class="row row-cols-1 row-cols-md-3 g-4">
+ 
+          </div>
+
+        
+
+
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Javascript File link  -->
+    <script src="js/book.js"></script>
+</body>
+</html>
